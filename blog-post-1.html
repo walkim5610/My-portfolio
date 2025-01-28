@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/Wkitech.png" type="png">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        #header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        #header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Blog Post */
+        #blog-post {
+            padding: 40px 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-title {
+            font-size: 2em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .blog-date {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .blog-content h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .blog-content p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta .btn-link {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta .btn-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Return Home</a></li>
+                    <li><a href="index.html#blog"> Go Back the Post</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <section id="blog-post">
+        <div class="container">
+            <h2 class="blog-title">Blog Post 1: Web Design and Development</h2>
+            <p class="blog-date">Published on January 23, 2025</p>
+            
+            <div class="blog-content">
+                <p>
+                    Web design and development are essential for building a strong online presence. By understanding key front-end technologies like HTML, CSS, and JavaScript, as well as back-end frameworks such as Python and PHP, developers can create fully functional, interactive websites.
+                </p>
+                <p>
+                    This post will explore the basics of Front-End and Back-End development, their roles in the development process, and some procedures used in creating modern websites.
+                </p>
+
+                <h3>1. Front-End Development Basics</h3>
+                <p>
+                    Front-End development is the part of web development that focuses on the user interface and user experience (UI/UX). Front-End developers use languages like HTML, CSS, and JavaScript to create the visual and interactive components of a website.
+                </p>
+
+                <h4>Key Front-End Technologies:</h4>
+                <table>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Purpose</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Defines the structure and content of a webpage.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Styles the visual layout, colors, and fonts of a webpage.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Adds interactivity and dynamic behavior to a webpage.</td>
+                    </tr>
+                </table>
+
+                <h3>2. Back-End Development Basics</h3>
+                <p>
+                    Back-End development handles the server-side logic, databases, and server interactions. It is responsible for processing user requests and delivering the appropriate response. Common back-end technologies include Python, PHP, and Node.js.
+                </p>
+
+                <h4>Key Back-End Technologies:</h4>
+                <table>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Purpose</th>
+                    </tr>
+                    <tr>
+                        <td>Python (Django, Flask)</td>
+                        <td>Used to build scalable web applications with frameworks like Django or Flask.</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                        <td>Server-side scripting language used for creating dynamic web content.</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>JavaScript runtime that allows for server-side scripting.</td>
+                    </tr>
+                </table>
+
+                <h3>3. Key Development Procedures</h3>
+                <p>
+                    The development process involves several stages, including planning, designing, coding, testing, and deployment. Below is a typical development procedure for building a website:
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Planning</td>
+                        <td>Define the purpose of the website, target audience, and key features.</td>
+                    </tr>
+                    <tr>
+                        <td>Designing</td>
+                        <td>Create wireframes and UI/UX designs for the website layout and structure.</td>
+                    </tr>
+                    <tr>
+                        <td>Coding</td>
+                        <td>Develop the front-end and back-end components of the website.</td>
+                    </tr>
+                    <tr>
+                        <td>Testing</td>
+                        <td>Perform quality assurance and fix any bugs or issues.</td>
+                    </tr>
+                    <tr>
+                        <td>Deployment</td>
+                        <td>Launch the website to a live server and monitor for any issues.</td>
+                    </tr>
+                </table>
+
+                <h3>4. The Importance of Front-End and Back-End Integration</h3>
+                <p>
+                    A successful website requires seamless integration between the front-end and back-end. The front-end interacts with the back-end to fetch and display data dynamically. Communication between the two is often handled using APIs or frameworks.
+                </p>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta">
+                <a href="index.html#blog" class="btn-link">Back to Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2025 Wkitech. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
