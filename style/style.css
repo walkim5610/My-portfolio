@@ -1,5 +1,6 @@
 /* General Styles */
-header {
+/* Header */
+header { 
     background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -29,6 +30,8 @@ header {
 #logo img {
     height: 100px; 
 }
+
+/* Navigation List */
 #nav-list {
     list-style: none;
     display: flex;
@@ -52,6 +55,7 @@ header {
     color: #ff5722;
 }
 
+/* Header Actions */
 #header-actions {
     display: flex;
     align-items: center;
@@ -78,6 +82,7 @@ header {
     display: block;
 }
 
+/* Dark Mode Toggle */
 #dark-mode-toggle {
     background-color: transparent;
     border: none;
@@ -94,17 +99,32 @@ header {
     color: #ff5722;
 }
 
-/* Mobile Navigation (Hamburger Menu) */
+/* Mobile Navigation */
 #menu-icon {
-    display: none;
-}
-
-#hamburger-icon {
-    font-size: 2rem;
+    display: block;
     cursor: pointer;
+    font-size: 2rem;
     color: #333;
 }
 
+/* Close Icon */
+#close-icon {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 24px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect on Close Icon */
+#close-icon:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+/* Mobile Menu Styles */
 #nav-list.mobile-menu {
     display: flex;
     flex-direction: column;
@@ -114,7 +134,7 @@ header {
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    display: none;
+    width: 250px;
 }
 
 #nav-list.mobile-menu li {
@@ -125,7 +145,15 @@ header {
     font-size: 1.2rem;
 }
 
-/* Responsive Styles for Small Devices */
+/* Ensure Close Icon is on Top */
+#nav-list.mobile-menu #close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     #nav-list {
         display: none;
