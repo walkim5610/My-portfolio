@@ -405,86 +405,154 @@
         </div>
     </div>
 </section>
-
-   <!-- Blog Section -->
+<!-- Blog Section -->
 <section id="blog">
     <div class="container">
         <h2>Blog</h2>
-        
-        <!-- Blog Post 1 -->
-        <div class="blog-post">
-            <img src="images/Blog1.jpeg" alt="Blog Post Image">
-            <h3>Web design and Development</h3>
-            <div class="blog-post-meta">
-                <span>By:Joseph Opiyo</span> | <span>January 14, 2025</span>
-            </div>
-            <p>
-                This is another brief introduction for websites. It gives readers a hint about <strong>Frontend and Backends development</strong>.
-            </p>
-            <a href="blog-post-1.html" class="btn-read-more">Read More</a>
+
+        <!-- Tag Filters -->
+        <div class="tags">
+            <span class="tag" data-filter="all">All</span>
+            <span class="tag" data-filter="web">Web</span>
+            <span class="tag" data-filter="design">Design</span>
+            <span class="tag" data-filter="iot">IoT</span>
         </div>
 
-        <!-- Blog Post 2 -->
-        <div class="blog-post">
-            <img src="images/Blog2.jpeg" alt="Blog Post Image">
-            <h3>Graphics Design</h3>
-            <div class="blog-post-meta">
-                <span>By:Ismael Juma</span> | <span>January 10, 2025</span>
+        <!-- Blog Posts -->
+        <div class="blog-posts">
+            <!-- Post 1 -->
+            <div class="blog-post" data-category="web">
+                <img src="images/Blog1.jpeg" alt="Blog Post Image">
+                <h3>Web Design and Development</h3>
+                <div class="blog-post-meta">
+                    <span>By: Joseph Opiyo</span> | <span>January 14, 2025</span>
+                </div>
+                <p>This is a brief about <strong>Frontend and Backend development</strong>.</p>
+                <a href="blog-post-1.html" class="btn-read-more">Read More</a>
             </div>
-            <p>
-                This is a brief introduction for Graphics. It gives readers a hint about the topic of the post.
-            </p>
-            <a href="blog-post-2.html" class="btn-read-more">Read More</a>
+
+            <!-- Post 2 -->
+            <div class="blog-post" data-category="design">
+                <img src="images/Blog2.jpeg" alt="Blog Post Image">
+                <h3>Graphics Design</h3>
+                <div class="blog-post-meta">
+                    <span>By: Ismael Juma</span> | <span>January 10, 2025</span>
+                </div>
+                <p>This is a brief introduction to Graphics Design.</p>
+                <a href="blog-post-2.html" class="btn-read-more">Read More</a>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="blog-post" data-category="iot">
+                <img src="images/Blog3.jpeg" alt="Blog Post Image">
+                <h3>IoT and Automations</h3>
+                <div class="blog-post-meta">
+                    <span>By: Mutua Lawrence</span> | <span>January 20, 2025</span>
+                </div>
+                <p>An introduction to <strong>IoT & Robotics</strong>.</p>
+                <a href="blog-post-3.html" class="btn-read-more">Read More</a>
+            </div>
         </div>
-    <!-- Blog Post 3 -->
-    <div class="blog-post">
-        <img src="images/Blog3.jpeg" alt="Blog Post Image">
-        <h3>IOT and Automations</h3>
-        <div class="blog-post-meta">
-            <span>By: Mutua Lawrence</span> | <span>January 20, 2025</span>
-        </div>
-        <p>
-            This is another brief introduction for <strong>IOT & Robotics</strong>. It gives readers a hint about the Emerging Trends in todays World.
-        </p>
-        <a href="blog-post-3.html" class="btn-read-more">Read More</a>
-    </div>
 
         <!-- Sidebar Section -->
-        <div class="blog-sidebar">
-            <div class="sidebar-widget">
+        <aside class="blog-sidebar">
+            <div class="sidebar-widget recent-posts-widget">
                 <h4>Recent Posts</h4>
                 <ul>
-                    <li><a href="blog-post-1.html">Blog Post Title 1</a></li>
-                    <li><a href="blog-post-2.html">Blog Post Title 2</a></li>
-                    <li><a href="blog-post-3.html">Blog Post Title 3</a></li>
+                    <li>
+                        <a href="blog-post-1.html">
+                            <img src="images/Blog1.jpeg" alt="Recent">
+                            <div>
+                                <p><strong>Web Design</strong></p>
+                                <small>Jan 14, 2025</small>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-post-2.html">
+                            <img src="images/Blog2.jpeg" alt="Recent">
+                            <div>
+                                <p><strong>Graphics Design</strong></p>
+                                <small>Jan 10, 2025</small>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <div class="sidebar-widget">
                 <h4>Categories</h4>
                 <ul>
-                    <li><a href="category1.html">Category 1</a></li>
-                    <li><a href="category2.html">Category 2</a></li>
-                    <li><a href="category3.html">Category 3</a></li>
+                    <li><a href="#" data-filter="web">Web</a></li>
+                    <li><a href="#" data-filter="design">Design</a></li>
+                    <li><a href="#" data-filter="iot">IoT</a></li>
                 </ul>
             </div>
-        </div>
 
-        <!-- Pagination Section -->
-        <div class="pagination">
-            <a href="#" class="prev">Previous</a>
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#" class="next">Next</a>
-        </div>
-    </div>
+<!-- Blog Contribution Section -->
+<section id="contribute" class="contribute-section">
+  <div class="container">
+    <h2>Contribute a Blog Post</h2>
+    <p>Have a tech story, tip, or project you want to share? Submit your blog post idea and become part of the W3kitech contributor community!</p>
+
+    <form id="contributeForm" action="https://formspree.io/f/xeogvono" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="profilePic">Upload Profile Picture</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*">
+        <img id="profilePreview" src="#" alt="Image Preview" style="display:none; max-width:100px; margin-top:10px;" />
+      </div>
+
+      <div class="form-group">
+        <label for="blogTitle">Blog Post Title *</label>
+        <input type="text" id="blogTitle" name="blogTitle" placeholder="E.g. 'How I Built My First Portfolio Website'" required>
+      </div>
+
+      <div class="form-group">
+        <label for="blogCategory">Category *</label>
+        <select id="blogCategory" name="blogCategory" required>
+          <option value="">Select a Category</option>
+          <option value="Web Development">Web Development</option>
+          <option value="UI/UX Design">UI/UX Design</option>
+          <option value="IoT & Robotics">IoT & Robotics</option>
+          <option value="Data Science">Data Science</option>
+          <option value="General Tech">General Tech</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="blogFile">Attach Your Blog (PDF, DOC, or Images)</label>
+        <input type="file" id="blogFile" name="blogFile" multiple>
+        <small>Upload blog content or relevant images. Max size: 50MB total.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="blogSummary">Short Summary *</label>
+        <textarea id="blogSummary" name="blogSummary" placeholder="Summarize your blog post in a few sentences..." required></textarea>
+      </div>
+
+      <button type="submit">Submit Blog Post</button>
+      <p id="contribute-response"></p>
+    </form>
+  </div>
 </section>
-
+</section>
 <!-- Contact Section -->
+ <section>
 <div id="contact">
     <div class="container">
         <h2>Get in Touch</h2>
+
+        <!-- Contact Details -->
         <div id="contact-details" class="row">
             <div class="col-md-6">
                 <p>Feel free to get in touch with me via email:</p>
@@ -495,135 +563,260 @@
                 <p><a href="tel:+254707816510">+254-707-816-510</a></p>
             </div>
         </div>
-
-        <!-- Contact Form -->
-        <div id="contact-form">
-            <h3>Or leave me a message</h3>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+<!-- Contact Form -->
+<div id="contact-form">
+    <h3>Or leave me a message</h3>
+    <form id="emailForm" action="https://formspree.io/f/xeogvono" method="POST">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
-    </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="response-message"></p> <!-- Response message area -->
 </div>
-
-
+</section>
 <!-- Footer Section -->
 <footer>
-    <div class="container">
-        <div class="row">
-            <!-- Copyright Section -->
-            <div class="col-sm-4 copyright">
-                <p>
-                    Copyright &copy; <span id="current-year">2025</span> Wkitech.
-                </p>
-            </div>
-
-            <!-- Back to Top Button -->
-            <div class="col-sm-2 top">
-                <span id="to-top">
-                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                </span>
-            </div>
-
-            <!-- Social Media Links -->
-            <div class="col-sm-6 social">
-                <ul>
-                    <li><a href="https://github.com/walkim5610" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://web.facebook.com/Manwalter01" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://x.com/WalterKimutai4?t=rxioUiaZ3eOGiK7kv1KuZQ&s=09" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/manwalter01/profilecard/?igsh=Z3lxd2k4OXZvdWF2" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="row">
-            <div class="col-12 contact-info">
-                <p>Feel free to <a href="tel:+254707816510">+254-707-816-510</a> for inquiries or collaborations.</p>
-            </div>
-        </div>
-
-        <!-- Newsletter Section -->
-        <div class="row">
-            <div class="col-12 newsletter">
-                <form action="#" method="post">
-                    <label for="email">Subscribe to my newsletter:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col copyright">
+        <p>&copy; 2025 W3kitech</p>
+      </div>
+      <div class="footer-col top">
+        <span id="to-top"><i class="fa fa-chevron-up"></i></span>
+      </div>
+      <div class="footer-col social">
+        <ul>
+          <li><a href="https://github.com/walkim5610"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/manwalter/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://web.facebook.com/Manwalter01"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://x.com/WalterKimutai4"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/manwalter01"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
     </div>
+
+    <div class="footer-row newsletter">
+      <form id="subscribeForm" action="https://formspree.io/f/xeogvono" method="POST">
+        <label for="email">Subscribe to my newsletter:</label>
+        <div class="newsletter-inputs">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </div>
+        <p id="subscribe-response"></p>
+      </form>
+    </div>
+  </div>
 </footer>
 
 <script src="scripts/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        AOS.init();
+document.addEventListener('DOMContentLoaded', function () {
+    AOS.init();
 
-        /** DARK MODE TOGGLE **/
-        const darkModeToggle = document.getElementById('dark-mode-toggle');
-        const modeIcon = document.getElementById('mode-icon');
+    /** DARK MODE TOGGLE **/
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const modeIcon = document.getElementById('mode-icon');
 
-        // Check if dark mode was previously enabled
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            document.body.classList.add('dark-mode');
-            modeIcon.classList.replace('fa-sun', 'fa-moon');
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        modeIcon.classList.replace('fa-sun', 'fa-moon');
+    }
+
+    darkModeToggle?.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        modeIcon.classList.replace(isDark ? 'fa-sun' : 'fa-moon', isDark ? 'fa-moon' : 'fa-sun');
+        localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    });
+
+    /** MOBILE MENU TOGGLE **/
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const navList = document.getElementById('nav-list');
+
+    hamburgerIcon?.addEventListener('click', function () {
+        navList.classList.add('mobile-menu', 'active');
+        navList.style.display = 'flex';
+        hamburgerIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+    });
+
+    closeIcon?.addEventListener('click', function () {
+        navList.classList.remove('mobile-menu', 'active');
+        navList.style.display = 'none';
+        hamburgerIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+    });
+
+    /** SEARCH BAR TOGGLE **/
+    const searchIcon = document.getElementById('search-icon');
+    const searchBar = document.getElementById('search');
+
+    searchIcon?.addEventListener('click', function () {
+        if (searchBar.style.display === 'block') {
+            searchBar.style.display = 'none';
+        } else {
+            searchBar.style.display = 'block';
+            searchBar.focus();
         }
+    });
 
-        darkModeToggle?.addEventListener('click', function () {
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
-
-            modeIcon.classList.replace(isDark ? 'fa-sun' : 'fa-moon', isDark ? 'fa-moon' : 'fa-sun');
-            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-        });
-
-        /** MOBILE MENU TOGGLE **/
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
-        const navList = document.getElementById('nav-list');
-
-        function toggleMenu() {
-            const isMenuOpen = navList.classList.toggle('mobile-menu');
-
-            // Toggle icons visibility
-            hamburgerIcon.style.display = isMenuOpen ? 'none' : 'block';
-            closeIcon.style.display = isMenuOpen ? 'block' : 'none';
-        }
-
-        hamburgerIcon?.addEventListener('click', toggleMenu);
-        closeIcon?.addEventListener('click', toggleMenu);
-
-        /** SEARCH BAR TOGGLE **/
-        document.getElementById('search-icon')?.addEventListener('click', function () {
-            let searchBar = document.getElementById('search');
-            searchBar.style.display = searchBar.style.display === 'block' ? 'none' : 'block';
-        });
-
-        /** SMOOTH SCROLL **/
-        document.getElementById('lead-down')?.addEventListener('click', function () {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-            });
+    /** SMOOTH SCROLL **/
+    document.getElementById('lead-down')?.addEventListener('click', function () {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
         });
     });
+
+    /** FORM SUBMISSION HANDLING (Contact Form) **/
+    const contactForm = document.getElementById("emailForm");
+    const responseMessage = document.getElementById("response-message");
+
+    contactForm?.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: contactForm.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                responseMessage.textContent = "Message sent successfully!";
+                responseMessage.style.color = "green";
+                contactForm.reset();
+            } else {
+                const data = await response.json();
+                responseMessage.textContent = data?.errors?.[0]?.message || "Message failed. Please try again.";
+                responseMessage.style.color = "red";
+            }
+        } catch (error) {
+            responseMessage.textContent = "There was an error sending your message. Please try again.";
+            responseMessage.style.color = "red";
+        }
+    });
+/** FOR BLOG **/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const posts = document.querySelectorAll(".blog-post");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const category = btn.getAttribute("data-category");
+
+      posts.forEach(post => {
+        if (category === "all" || post.dataset.category === category) {
+          post.style.display = "block";
+        } else {
+          post.style.display = "none";
+        }
+      });
+    });
+  });
+});
+
+/** FOR BLOG **/
+document.getElementById("contributeForm")?.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const form = e.target;
+  const responseMsg = document.getElementById("contribute-response");
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      responseMsg.textContent = "Thanks for your submission! We'll review and post it soon.";
+      responseMsg.style.color = "green";
+      form.reset();
+      document.getElementById("profilePreview").style.display = "none";
+    } else {
+      responseMsg.textContent = "Submission failed. Please check your inputs and try again.";
+      responseMsg.style.color = "red";
+    }
+  } catch (error) {
+    responseMsg.textContent = "Network error. Please try again later.";
+    responseMsg.style.color = "red";
+  }
+});
+
+// Profile Picture Preview
+const profilePicInput = document.getElementById("profilePic");
+const profilePreview = document.getElementById("profilePreview");
+
+profilePicInput?.addEventListener("change", function () {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      profilePreview.src = e.target.result;
+      profilePreview.style.display = "block";
+    }
+    reader.readAsDataURL(file);
+  } else {
+    profilePreview.src = "#";
+    profilePreview.style.display = "none";
+  }
+});
+
+    /** FORM SUBSCRIPTION (Newsletter) **/
+    const subscribeForm = document.getElementById("subscribeForm");
+    const subscribeResponse = document.getElementById("subscribe-response");
+
+    subscribeForm?.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const formData = new FormData(subscribeForm);
+
+        try {
+            const response = await fetch(subscribeForm.action, {
+                method: subscribeForm.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                subscribeResponse.textContent = "Thanks for subscribing!";
+                subscribeResponse.style.color = "green";
+                subscribeForm.reset();
+            } else {
+                subscribeResponse.textContent = "Failed to subscribe. Try again.";
+                subscribeResponse.style.color = "red";
+            }
+        } catch (error) {
+            subscribeResponse.textContent = "Network error. Try again later.";
+            subscribeResponse.style.color = "red";
+        }
+    });
+});
 </script>
+
 
 </body>
 </html>
